@@ -1,0 +1,12 @@
+{% extends "books/base.html" %}
+{% block content %}
+
+<a href="/"> Wróć do strony głównej </a>
+
+<ul>
+    {% for n in all_books %}
+    <li>{{ n }} </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
